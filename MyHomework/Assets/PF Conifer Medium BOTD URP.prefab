@@ -258,9 +258,11 @@ GameObject:
   m_Component:
   - component: {fileID: 8532517835305373111}
   - component: {fileID: 8411774125936822609}
+  - component: {fileID: 2357529187562846355}
+  - component: {fileID: 5657054070031913590}
   m_Layer: 0
   m_Name: PF Conifer Medium BOTD URP
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,3 +312,39 @@ LODGroup:
     renderers:
     - renderer: {fileID: 8449050011778055799}
   m_Enabled: 1
+--- !u!114 &2357529187562846355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530857361599059743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f7c486c4bff7e1439ab7c974b736758, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hp: 1000
+--- !u!136 &5657054070031913590
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530857361599059743}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 17.870525
+  m_Direction: 1
+  m_Center: {x: 0, y: 8.435263, z: 0}
