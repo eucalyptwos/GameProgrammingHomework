@@ -6,7 +6,7 @@ public class EnemyMoving : MonoBehaviour
 {
     [SerializeField] float moveRate;
     [SerializeField] float speed;
-	
+	Vector3 moveVec;
 	// Start is called before the first frame update
 	void Start()
     {
@@ -14,13 +14,13 @@ public class EnemyMoving : MonoBehaviour
 	}
 	private void Rotate()
 	{
-		transform.Rotate(0, 0, Random.Range(-60, 60));
+		moveVec = new  Vector3(Random.Range(-1, 1), Random.Range(-1, 1), 0);
 	}
 
 	// Update is called once per frame
 	void Update()
     {
 		var dir = Vector3.down;
-		gameObject.transform.Translate(dir * speed * 3*Time.deltaTime);
+		gameObject.transform.Translate(moveVec * speed *Time.deltaTime);
 	}
 }

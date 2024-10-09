@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveRate: 3
-  speed: 1.5
+  speed: 3
 --- !u!54 &3458533061475653851
 Rigidbody:
   m_ObjectHideFlags: 0
